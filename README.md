@@ -1,2 +1,1 @@
-# codewars-repo-personal
-for archive
+https://www.codewars.com/users/CANMERTINYO/completed_solutions

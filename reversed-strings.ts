@@ -3,10 +3,5 @@
 //word => drow
 
 export function solution(str: string): string {
-  let modifiedString: string[] = [];
-  for (const iterator of str) {
-    modifiedString.push(iterator);
-  }
-  modifiedString.reverse();
-  return modifiedString.join("").toLowerCase();
+  return str.split("").reverse().join("");
 }

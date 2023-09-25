@@ -5,9 +5,6 @@ function detectRepeatedNumbersAndCollect(array: number[]): number[] {
 
   for (let i = 0; i < array.length; i++) {
     for (let j = i + 1; j < array.length; j++) {
-      if (array[i] === array[j]) {
-        console.log(`Eşleşme sağlandı: j: ${array[j]} i : ${array[i]}`);
-      }
       if (array[i] === array[j] && !repeatedNumbers.includes(array[i])) {
         repeatedNumbers.push(array[i]);
       }

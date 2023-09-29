@@ -2,7 +2,7 @@ function generateParantheses(n: number) {
   const result: string[] = [];
 
   function backtrack(combination = "", openCount = 0, closeCount = 0) {
-    if (combination.length === 2 * n) collectedParanthesis.push(combination);
+    if (combination.length === 2 * n) result.push(combination);
 
     if (openCount < n) {
       backtrack(combination + "(", openCount + 1, closeCount);

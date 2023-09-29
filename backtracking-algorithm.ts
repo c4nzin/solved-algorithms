@@ -1,5 +1,5 @@
-function generateParanthesis(n: number) {
-  const collectedParanthesis: string[] = [];
+function generateParantheses(n: number) {
+  const result: string[] = [];
 
   function backtrack(combination = "", openCount = 0, closeCount = 0) {
     if (combination.length === 2 * n) collectedParanthesis.push(combination);
@@ -15,6 +15,6 @@ function generateParanthesis(n: number) {
 
   backtrack();
 
-  return collectedParanthesis;
+  return result;
 }
 

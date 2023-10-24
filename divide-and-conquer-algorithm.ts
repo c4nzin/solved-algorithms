@@ -26,7 +26,11 @@ function divideAndConquer(arr: number[], target: number): number | null {
 }
 
 const array = [1, 3, 5, 7, 9, 11, 13, 15, 17];
-const targetElement = 7;
+const targetElement = 3;
 
 let result = divideAndConquer(array, targetElement);
-console.log(result);
+if (result === null) {
+  console.log("item not found");
+} else {
+  console.log(result);
+}
